@@ -123,8 +123,8 @@
 }
 
 - (void)tapPushThirdVC {
-    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
-//    ThirdViewController *thirdVC = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+//    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+    ThirdViewController *thirdVC = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
     [self.navigationController pushViewController:thirdVC animated:true];
 }
 
@@ -140,8 +140,6 @@
     [self.pushBtn addConstraint:[NSLayoutConstraint constraintWithItem:self.pushBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.pushBtn attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0]];
     
 }
-
-
 
 
 @end
