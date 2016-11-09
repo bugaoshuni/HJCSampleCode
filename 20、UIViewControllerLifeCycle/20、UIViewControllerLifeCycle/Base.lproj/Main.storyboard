@@ -58,6 +58,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="第一个页面" id="Jkf-AX-K6B"/>
+                    <connections>
+                        <outlet property="pushBtn" destination="ccS-Hu-L0h" id="bDS-eU-CwJ"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-454" y="16"/>

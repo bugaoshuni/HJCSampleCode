@@ -17,7 +17,6 @@
 
 + (void)initialize {
     NSLog(@"SecondViewController - initialize");
-    [super initialize];
 }
 
 - (instancetype)init {
@@ -35,21 +34,14 @@
     return [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 }
 
-- (void)loadView {
-//    [super loadView];
-    NSLog(@"SecondViewController - loadView");
-    
-        UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        customView.backgroundColor = [UIColor redColor];
-        self.view = customView;
-    
-//    self.view.backgroundColor = [UIColor redColor];
-    self.view.frame = CGRectMake(0, 0, 50, 50);
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    NSLog(@"SecondViewController-awakeFromNib");
 }
 
-
-- (void)awakeFromNib {
-    NSLog(@"awakeFromNib");
+- (void)loadView {
+    [super loadView];
+    NSLog(@"SecondViewController - loadView");
 }
 
 - (void)viewDidLoad {
@@ -57,7 +49,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"第二个页面";
-//    self.view.frame = CGRectMake(0, 0, 50, 50);
     
     self.pushBtn = [[UIButton alloc] initWithFrame:CGRectMake(11, 88, 33, 99)];
     [self.pushBtn setTitle:@"跳转按钮" forState:UIControlStateNormal];
@@ -69,8 +60,6 @@
     
 //    [self.view setNeedsUpdateConstraints];
 //    [self testUpdateConstraint];
-    
-    
 }
 
 
@@ -135,6 +124,7 @@
 
 - (void)tapPushThirdVC {
     ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+//    ThirdViewController *thirdVC = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
     [self.navigationController pushViewController:thirdVC animated:true];
 }
 
@@ -150,6 +140,8 @@
     [self.pushBtn addConstraint:[NSLayoutConstraint constraintWithItem:self.pushBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.pushBtn attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0]];
     
 }
+
+
 
 
 @end

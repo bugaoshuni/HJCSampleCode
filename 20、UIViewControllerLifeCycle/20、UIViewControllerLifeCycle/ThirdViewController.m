@@ -8,6 +8,7 @@
 
 #import "ThirdViewController.h"
 #import "CoderDemoViewController.h"
+#import "FourViewController.h"
 
 @interface ThirdViewController ()
 
@@ -21,7 +22,6 @@
 
 + (void)initialize {
     NSLog(@"ThirdViewController - initialize");
-    [super initialize];
 }
 
 - (instancetype)init {
@@ -34,12 +34,18 @@
     return [super initWithCoder:aDecoder];
 }
 
-//
+
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     NSLog(@"ThirdViewController - initWithNibName");
     return [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    NSLog(@"ThirdViewController-awakeFromNib");
+}
+
+////使用Xib来实现VC的时候，不要重写loadView方法。如果重写了loadView方法，则Xib中View就会消失，变成空View。
 //- (void)loadView {
 //    [super loadView];
 //    NSLog(@"ThirdViewController - loadView");
@@ -121,9 +127,11 @@
 }
 
 - (IBAction)tapPushCoderVC:(UIButton *)sender {
-    CoderDemoViewController *CoderDemoVC = [[CoderDemoViewController alloc] init];
+//    CoderDemoViewController *CoderDemoVC = [[CoderDemoViewController alloc] init];
     
-    [self.navigationController pushViewController:CoderDemoVC animated:true];
+    UIStoryboard *mainStory = [UIStoryboard storyboardWithName:@"FourViewController" bundle:nil];
+    FourViewController *fourVC = [mainStory instantiateInitialViewController];
+    [self.navigationController pushViewController:fourVC animated:true];
 }
 
 @end

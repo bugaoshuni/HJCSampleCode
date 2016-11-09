@@ -17,6 +17,8 @@
 		2467CB981DD2B65E00282908 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2467CB931DD2B65E00282908 /* SecondViewController.m */; };
 		2467CB991DD2B65E00282908 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2467CB951DD2B65E00282908 /* ThirdViewController.m */; };
 		2467CB9A1DD2B65E00282908 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2467CB961DD2B65E00282908 /* ThirdViewController.xib */; };
+		2467CB9D1DD2C6DD00282908 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2467CB9C1DD2C6DD00282908 /* FourViewController.m */; };
+		2467CB9F1DD2C6E900282908 /* FourViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2467CB9E1DD2C6E900282908 /* FourViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		2467CB941DD2B65E00282908 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		2467CB951DD2B65E00282908 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		2467CB961DD2B65E00282908 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		2467CB9B1DD2C6DD00282908 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		2467CB9C1DD2C6DD00282908 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		2467CB9E1DD2C6E900282908 /* FourViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FourViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +78,17 @@
 				2467CB7D1DD2B3F000282908 /* AppDelegate.m */,
 				2467CB7F1DD2B3F000282908 /* ViewController.h */,
 				2467CB801DD2B3F000282908 /* ViewController.m */,
-				2467CB901DD2B65E00282908 /* CoderDemoViewController.h */,
-				2467CB911DD2B65E00282908 /* CoderDemoViewController.m */,
+				2467CB821DD2B3F000282908 /* Main.storyboard */,
 				2467CB921DD2B65E00282908 /* SecondViewController.h */,
 				2467CB931DD2B65E00282908 /* SecondViewController.m */,
 				2467CB941DD2B65E00282908 /* ThirdViewController.h */,
 				2467CB951DD2B65E00282908 /* ThirdViewController.m */,
 				2467CB961DD2B65E00282908 /* ThirdViewController.xib */,
-				2467CB821DD2B3F000282908 /* Main.storyboard */,
+				2467CB9B1DD2C6DD00282908 /* FourViewController.h */,
+				2467CB9C1DD2C6DD00282908 /* FourViewController.m */,
+				2467CB9E1DD2C6E900282908 /* FourViewController.storyboard */,
+				2467CB901DD2B65E00282908 /* CoderDemoViewController.h */,
+				2467CB911DD2B65E00282908 /* CoderDemoViewController.m */,
 				2467CB851DD2B3F000282908 /* Assets.xcassets */,
 				2467CB871DD2B3F000282908 /* LaunchScreen.storyboard */,
 				2467CB8A1DD2B3F000282908 /* Info.plist */,
@@ -156,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2467CB9F1DD2C6E900282908 /* FourViewController.storyboard in Resources */,
 				2467CB891DD2B3F000282908 /* LaunchScreen.storyboard in Resources */,
 				2467CB861DD2B3F000282908 /* Assets.xcassets in Resources */,
 				2467CB9A1DD2B65E00282908 /* ThirdViewController.xib in Resources */,
@@ -170,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2467CB9D1DD2C6DD00282908 /* FourViewController.m in Sources */,
 				2467CB981DD2B65E00282908 /* SecondViewController.m in Sources */,
 				2467CB811DD2B3F000282908 /* ViewController.m in Sources */,
 				2467CB991DD2B65E00282908 /* ThirdViewController.m in Sources */,
